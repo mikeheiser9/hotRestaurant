@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="/style.css" rel="stylesheet" type="text/css">
+</head>
 
-	
 <body class="container-fluid">
-	<div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+<div class="text-center jumbotron">
+  <h1><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
+  <p>Make your reservation</p>
+  <p><a class="btn btn-primary btn-lg" href="tables.html" role="button">View Tables</a><a type="button" class="btn btn-outline-secondary"><span class="glyphicon glyphicon-home" href="reserve.html"></span> Home</a> </p>
 </div>
-	<footer class="footer">
-		<div class="container-fluid">
-			<div class="container"><br>
-				<p>ayeeee, lemme get them bonus points, fam</p>
-			</div>
-		</div>
-	</footer>
+<form>
+  <div class="form-group">
+    <label for="res_name">Reservation Name</label>
+    <input type="text" class="form-control" id="res_name" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="res_email">Email address</label>
+    <input type="email" class="form-control" id="res_email" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="res_name">Phone Number</label>
+    <input type="text" class="form-control" id="res_phone" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="res_name">Phone Number</label>
+    <input type="text" class="form-control" id="unique_id" placeholder="name@example.com">
+  </div>
+</form>
+  <div id="bottom_controls">
+	  <a href="/api/tables/">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/mikeheiser9/hotRestaurant">GitHub Repo</a> 
+  </div>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="container"><br>
+      <p>You should probably bring two buckets.</p>
+    </div>
+  </div>
+</footer>
 </body>
